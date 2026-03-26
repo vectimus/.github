@@ -32,10 +32,10 @@ Two commands. 78 policies. Your agents governed before they execute.
                            │
                      ┌─────┴─────┐
                      ▼           ▼
-              ┌──────────┐ ┌─────────────┐
+              ┌──────────┐ ┌──────────────┐
               │Audit Log │ │Signed Receipt│
-              │ (JSONL)  │ │ (Ed25519)   │
-              └──────────┘ └─────────────┘
+              │ (JSONL)  │ │ (Ed25519)    │
+              └──────────┘ └──────────────┘
 ```
 
 - **Deterministic** -- No LLM in the governance loop. Cedar policies, not probability.
