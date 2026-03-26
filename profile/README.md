@@ -24,9 +24,18 @@ Two commands. 78 policies. Your agents governed before they execute.
 ### How it works
 
 ```
-Agent tool call ──> Vectimus daemon ──> Cedar policy evaluation ──> Allow / Deny
-                         |
-                    Signed audit receipt (Ed25519)
+┌─────────────┐     ┌───────────────┐     ┌──────────────┐     ┌──────────┐
+│  AI Agent   │────▶│   Vectimus    │────▶│ Cedar Policy │────▶│ allow /  │
+│ (tool call) │     │  Normaliser   │     │   Engine     │     │ deny /   │
+│             │◀────│               │◀────│              │◀────│ escalate │
+└─────────────┘     └───────────────┘     └──────────────┘     └──────────┘
+                           │
+                     ┌─────┴─────┐
+                     ▼           ▼
+              ┌──────────┐ ┌─────────────┐
+              │Audit Log │ │Signed Receipt│
+              │ (JSONL)  │ │ (Ed25519)   │
+              └──────────┘ └─────────────┘
 ```
 
 - **Deterministic** -- No LLM in the governance loop. Cedar policies, not probability.
