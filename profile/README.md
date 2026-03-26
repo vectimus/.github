@@ -25,8 +25,8 @@ Two commands. 78 policies. Your agents governed before they execute.
 
 ```
 ┌─────────────┐     ┌───────────────┐     ┌──────────────┐     ┌──────────┐
-│  AI Agent   │────▶│   Vectimus    │────▶│ Cedar Policy │────▶│ allow /  │
-│ (tool call) │     │  Normaliser   │     │   Engine     │     │ deny /   │
+│  AI Agent   │────▶│               │────▶│ Cedar Policy │────▶│ allow /  │
+│ (tool call) │     │   Vectimus    │     │   Engine     │     │ deny /   │
 │             │◀────│               │◀────│              │◀────│ escalate │
 └─────────────┘     └───────────────┘     └──────────────┘     └──────────┘
                            │
