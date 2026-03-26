@@ -51,5 +51,5 @@ OWASP Agentic Top 10 (all 10 categories) | SOC 2 | NIST AI RMF | NIST CSF 2.0 | 
 ---
 
 <p align="center">
-  <a href="https://vectimus.com">Website</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://vectimus.com/docs">Docs</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://vectimus.com/blog">Blog</a>
+  <a href="https://vectimus.com">Website</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://vectimus.com/docs/getting-started">Docs</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://vectimus.com/blog">Blog</a>
 </p>
